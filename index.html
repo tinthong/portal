@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="static/home/junxuan/css/styles_1.css" rel="stylesheet">
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  <script type="text/javascript">
+
+    let customAlert = document.getElementById("customAlert");
+
+    function verify() {
+      let code = document.getElementById("ip_code").value;
+
+      if (code == 113113) {
+        window.location = "homePage.html";
+      } else {
+        document.getElementById("customAlert").style.display = 'block';
+      }
+    }
+
+    function hideAlert() {
+      document.getElementById("customAlert").style.display = 'none';
+    }
+
+  </script>
+</head>
+
+<body class="body-vf">
+  <div class="container-vf">
+    <div id="input_code">
+      <form action="/" method="get">
+        <center>
+          <div>
+            <input type="text" id="ip_code" placeholder="Nhập Mã số" required="required">
+          </div>
+        </center>
+      </form>
+    </div>
+    <center><button id="sb_vf" type="submit" onclick="verify();">xác nhận</button></center>
+  </div>
+
+  <div id="customAlert">
+    <div id="box">
+      <div class="heading">
+        NHẬP SAI MÃ
+      </div>
+      <div class="content">
+        <p>Mời nhập lại !</p>
+        <button type="button" id="confirmBtn" onclick="hideAlert()">Ok</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

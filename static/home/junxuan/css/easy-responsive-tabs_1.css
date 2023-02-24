@@ -1,0 +1,38 @@
+body { margin: 0px; padding: 0px; background: #f5f5f5; font-family: 'Segoe UI'; }
+
+ul.resp-tabs-list, p { margin: 0px; padding: 0px; }
+
+.resp-tabs-list li { margin-bottom: -1px; color: #FFF; background: #A7A9AC; font: 100 13px/35px Roboto,Arial,Tahoma; border-radius: 5px 5px 0 0; display: inline-block; padding: 0 15px; margin: 0 1px 0 0; list-style: none; cursor: pointer; float: left; }
+
+.resp-tabs-container { padding: 0px; background-color: #fff; clear: left; border-radius: 0 7px 7px 7px; }
+
+h2.resp-accordion { cursor: pointer; padding: 5px; display: none; }
+
+.resp-tab-content { display: none; padding: 15px; }
+
+.resp-tab-active { margin-bottom: -1px !important; background: #ED1C24 !important; }
+
+.resp-content-active, .resp-accordion-active { display: block; }
+
+.resp-tab-content { border: 1px solid #ddd; border-radius: 0 7px 7px 7px; }
+
+h2.resp-accordion { font-size: 13px; border: 1px solid #c1c1c1; border-top: 0px solid #c1c1c1; margin: 0px; padding: 10px 15px; }
+
+h2.resp-tab-active { border-bottom: 0px solid #c1c1c1 !important; margin-bottom: 0px !important; padding: 10px 15px !important; }
+
+h2.resp-tab-title:last-child { border-bottom: 12px solid #c1c1c1 !important; background: blue; }
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+    ul.resp-tabs-list { display: none; }
+
+    h2.resp-accordion { display: block; }
+
+    .resp-vtabs .resp-tab-content { border: 1px solid #C1C1C1; }
+
+    .resp-vtabs .resp-tabs-container { border: none; float: none; width: 100%; min-height: 100px; clear: none; }
+
+    .resp-accordion-closed { display: none !important; }
+
+    .resp-vtabs .resp-tab-content:last-child { border-bottom: 1px solid #c1c1c1 !important; }
+}

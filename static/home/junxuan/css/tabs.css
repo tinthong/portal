@@ -1,0 +1,25 @@
+/*******************tab trang danh sach********************/
+.tab-page { display: none; padding: 20px; }
+.active-page { display: block; }
+.outer-wrap { width: 100%; max-width: 500px; margin: 0 auto; }
+.clear-float { clear: both; }
+ul.simple-tabs { width: 100%; max-width: 500px; margin: 0; padding: 0; margin-bottom: -1px; overflow: auto; margin-top: 20px;}
+    ul.simple-tabs li { border-bottom: none; border: 1px solid #ddd; color: #FFF; border-radius: 7px 7px 0 0; background: #939598; float: left; padding: 5px 30px; list-style-type: none; text-align: center;}
+        ul.simple-tabs li:hover,
+        ul.simple-tabs li.active { border-bottom: 1px solid #FFF !important; font-weight: bold; border: 1px solid #ddd; background: #FFF url('../images/bg-tabs.png') repeat-x center top; color: #ED1C24; }
+.tab-page { max-width: 100%; width: 100%; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #ddd; border-radius: 0 7px 7px 7px; }
+img { max-width: 500px; }
+.ninety-percent-pad { width: 90%; margin: 25px auto; }
+
+/**********tab trang chi tiet**********/
+
+.tab-page-ct { display: none; }
+.active-page { display: block; }
+.outer-wrap-ct { width: 100%; max-width: 500px; margin: 0 auto; }
+.clear-float-ct { clear: both; }
+ul.simple-tabs-ct { padding: 5px 1% 0 1%; background: #FFF url('../images/bg-lts-vanban.png')repeat-x center bottom; width: 98%; margin: 0; margin-bottom: -1px; overflow: auto; }
+    ul.simple-tabs-ct li { border-top: 2px solid #FFF; font-size: 13px; border-bottom: none; color: #58595B; text-transform: uppercase; float: left; padding: 0 15px; list-style-type: none; text-align: center; line-height: 30px; cursor: pointer;}
+        ul.simple-tabs-ct li.active { font-weight: bold; background: #FFF; border-right: 1px solid #DDD; border-left: 1px solid #DDD; color: #1B75BC; border-top: 2px solid #BE1E2D; }
+.tab-page-ct { max-width: 100%; width: 100%; -moz-box-sizing: border-box; box-sizing: border-box; min-height: 400px; }
+img { max-width: 500px; }
+.ninety-percent-pad { width: 90%; margin: 25px auto; }
