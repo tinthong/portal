@@ -13,9 +13,6 @@ jobs:
       with:
         node-version: "16"
     - name: 🔨 Build Project
-      run: |
-        npm install
-        npm run build
         
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
@@ -23,5 +20,3 @@ jobs:
         server: ${{ secrets.SERECT_LINK }}
         username: ${{ secrets.SERECT_USER }}
         password: ${{ secrets.SERECT_PASSWORD }}
-        dangerous-clean-slate: true
-        local-dir: ./build/
